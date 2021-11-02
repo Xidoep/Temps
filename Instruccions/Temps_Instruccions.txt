@@ -1,0 +1,34 @@
+v2
+
+TEMPS:
+1- Converteix el temps acutal en "Ticks", el guarda, el recupera i recorda el temps amb la app apagada.
+
+2- Afegir el prefab "_Temps", a l'escena "Load".
+
+	Funcionament:
+		Awake(); - Recupera la informacio guardada i la compara amb el temps actual.
+		FixedUpdate(); - Agafa les dades actuals a cada "Tick" (segon).
+		OnApplicationQuit(); - Guarda el temps exacte en el que has tancat la app.
+
+		Temps.tick - Nomes dura un fram cada segon. Utilitzar per gestionar els canvis durant el temps.
+			Ex: if(Temps.tick) energia --;
+
+CRONOMETRE:
+1- Agefir "l'Script" al gameObject que vols que porti un conometre.
+
+2- Modificar el key amb el que vols guardar la info del conometre.
+
+2- Capturar el "Conometre" al Scripts que el gestionara.
+
+	Variables:
+		Key - El nom amb el que guarda el conometre al Playerprefs.
+	Funcions:
+		Crear(temps,funcio);
+			- Crea un conometre en el que se l'hi passa la funcio que vol ejecutar el finalitzar.
+			- Al crearlo, guarda un Playerprefs amb el key.
+
+		Recuperar(funcio);
+			-Utilitzar aquesta funcio sempra al Update del Script de gestio, si es vol recuperar el conomete al iniciar la partida.
+			
+		Cancelar(); - Cancela el conometre i la informacio guardada sobre ell.
+
