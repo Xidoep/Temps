@@ -1,8 +1,9 @@
 {
-  "name": "com.xidostudio.time",
-  "version": "0.0.1-preview.1",
-  "displayName": "XS_Time",
-  "description": "Control del temps via 'Ticks' amb la app oberta i apagada.",
-  "type": "editor",
-  "hideInEditor": false
+  "name": "com.xidostudio.temps",
+  "displayName": "XS_Temps",
+  "version": "1.0.0",
+  "description": "Control de temps dins i fora la app.",
+  "dependencies": {
+    "com.xidostudio.utils": "1.0.0"
+  }
 }
