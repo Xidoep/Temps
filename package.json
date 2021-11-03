@@ -2,8 +2,5 @@
   "name": "com.xidostudio.temps",
   "displayName": "XS_Temps",
   "version": "1.0.0",
-  "description": "Control de temps dins i fora la app.",
-  "dependencies": {
-    "com.xidostudio.utils": "1.0.0"
-  }
+  "description": "Control de temps dins i fora la app."
 }
